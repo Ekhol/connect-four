@@ -97,11 +97,13 @@ function handleClick(evt) {
 
   // check for win
   if (checkForWin()) {
+    document.getElementById("column-top").removeEventListener("click", handleClick);
     return endGame(`Player ${currPlayer} won!`);
   }
 
   // check for tie
   if (board.every(row => row.every(cell => cell))) {
+    document.getElementById("column-top").removeEventListener("click", handleClick);
     return endGame("It's a tie!");
   }
 
