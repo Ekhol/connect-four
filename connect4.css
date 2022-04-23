@@ -1,8 +1,22 @@
-/* game board table */
+body {
+  background-color: wheat;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 50px;
+  margin-top: 5%;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+}
 
 #board td {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border: solid 1px #666;
 }
 
@@ -28,9 +42,28 @@
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: dashed 1px rgb(150, 150, 150);
 }
 
 #column-top td:hover {
   background-color: gold;
+}
+
+#reset-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#reset-container :hover {
+  background-color: black;
+  color: white;
+}
+
+#reset {
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  background-color: burlywood;
+  border: solid 1px black;
+  border-radius: 5%;
 }
